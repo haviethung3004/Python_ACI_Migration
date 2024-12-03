@@ -1,0 +1,3 @@
+vlan_id,vlan_name,tenant,vrf,bdgw,bdmaskbd_name,unicast,appname,epgname,PhysDom
+Tenant_3
+Tenant_2
