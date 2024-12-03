@@ -1,0 +1,1893 @@
+{
+  "fvTenant": {
+    "attributes": {
+      "annotation": "",
+      "descr": "",
+      "dn": "uni/tn-SnV",
+      "name": "SnV",
+      "nameAlias": "",
+      "ownerKey": "",
+      "ownerTag": "",
+      "userdom": ":all:"
+    },
+    "children": [
+      {
+        "vzBrCP": {
+          "attributes": {
+            "annotation": "",
+            "descr": "",
+            "dn": "uni/tn-SnV/brc-database",
+            "intent": "install",
+            "name": "database",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "prio": "unspecified",
+            "scope": "application-profile",
+            "targetDscp": "unspecified",
+            "userdom": ":all:"
+          },
+          "children": [
+            {
+              "vzSubj": {
+                "attributes": {
+                  "annotation": "",
+                  "consMatchT": "AtleastOne",
+                  "descr": "",
+                  "dn": "",
+                  "name": "sql",
+                  "nameAlias": "",
+                  "prio": "unspecified",
+                  "provMatchT": "AtleastOne",
+                  "revFltPorts": "yes",
+                  "targetDscp": "unspecified",
+                  "userdom": ":all:"
+                },
+                "children": [
+                  {
+                    "vzRsSubjFiltAtt": {
+                      "attributes": {
+                        "action": "permit",
+                        "annotation": "",
+                        "directives": "",
+                        "dn": "",
+                        "priorityOverride": "default",
+                        "tnVzFilterName": "sql",
+                        "userdom": ":all:"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "vzBrCP": {
+          "attributes": {
+            "annotation": "",
+            "descr": "",
+            "dn": "uni/tn-SnV/brc-web",
+            "intent": "install",
+            "name": "web",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "prio": "unspecified",
+            "scope": "context",
+            "targetDscp": "unspecified",
+            "userdom": ":all:"
+          },
+          "children": [
+            {
+              "vzSubj": {
+                "attributes": {
+                  "annotation": "",
+                  "consMatchT": "AtleastOne",
+                  "descr": "",
+                  "dn": "",
+                  "name": "http",
+                  "nameAlias": "",
+                  "prio": "unspecified",
+                  "provMatchT": "AtleastOne",
+                  "revFltPorts": "yes",
+                  "targetDscp": "unspecified",
+                  "userdom": ":all:"
+                },
+                "children": [
+                  {
+                    "vzRsSubjFiltAtt": {
+                      "attributes": {
+                        "action": "permit",
+                        "annotation": "",
+                        "directives": "",
+                        "dn": "",
+                        "priorityOverride": "default",
+                        "tnVzFilterName": "http",
+                        "userdom": ":all:"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "vnsSvcCont": {
+          "attributes": {
+            "annotation": "",
+            "dn": "uni/tn-SnV/svcCont",
+            "userdom": "all"
+          }
+        }
+      },
+      {
+        "fvEpTags": {
+          "attributes": {
+            "annotation": "",
+            "dn": "uni/tn-SnV/eptags",
+            "userdom": "all"
+          }
+        }
+      },
+      {
+        "fvCtx": {
+          "attributes": {
+            "annotation": "",
+            "bdEnforcedEnable": "no",
+            "descr": "",
+            "dn": "uni/tn-SnV/ctx-Tenant_3",
+            "ipDataPlaneLearning": "enabled",
+            "knwMcastAct": "permit",
+            "name": "Tenant_3",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "pcEnfDir": "ingress",
+            "pcEnfPref": "enforced",
+            "userdom": ":all:",
+            "vrfIndex": "0"
+          },
+          "children": [
+            {
+              "fvRsVrfValidationPol": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnL3extVrfValidationPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "vzAny": {
+                "attributes": {
+                  "annotation": "",
+                  "descr": "",
+                  "dn": "",
+                  "matchT": "AtleastOne",
+                  "name": "",
+                  "nameAlias": "",
+                  "prefGrMemb": "disabled",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsOspfCtxPol": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnOspfCtxPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsCtxToEpRet": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnFvEpRetPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsCtxToExtRouteTagPol": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnL3extRouteTagPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsBgpCtxPol": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnBgpCtxPolName": "",
+                  "userdom": "all"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fvCtx": {
+          "attributes": {
+            "annotation": "",
+            "bdEnforcedEnable": "no",
+            "descr": "",
+            "dn": "uni/tn-SnV/ctx-Tenant_2",
+            "ipDataPlaneLearning": "enabled",
+            "knwMcastAct": "permit",
+            "name": "Tenant_2",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "pcEnfDir": "ingress",
+            "pcEnfPref": "enforced",
+            "userdom": ":all:",
+            "vrfIndex": "0"
+          },
+          "children": [
+            {
+              "fvRsVrfValidationPol": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnL3extVrfValidationPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "vzAny": {
+                "attributes": {
+                  "annotation": "",
+                  "descr": "",
+                  "dn": "",
+                  "matchT": "AtleastOne",
+                  "name": "",
+                  "nameAlias": "",
+                  "prefGrMemb": "disabled",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsOspfCtxPol": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnOspfCtxPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsCtxToEpRet": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnFvEpRetPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsCtxToExtRouteTagPol": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnL3extRouteTagPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsBgpCtxPol": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnBgpCtxPolName": "",
+                  "userdom": "all"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fvCtx": {
+          "attributes": {
+            "annotation": "",
+            "bdEnforcedEnable": "no",
+            "descr": "",
+            "dn": "uni/tn-SnV/ctx-Superverse",
+            "ipDataPlaneLearning": "enabled",
+            "knwMcastAct": "permit",
+            "name": "Superverse",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "pcEnfDir": "ingress",
+            "pcEnfPref": "enforced",
+            "userdom": ":all:",
+            "vrfIndex": "0"
+          },
+          "children": [
+            {
+              "fvRsVrfValidationPol": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnL3extVrfValidationPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "vzAny": {
+                "attributes": {
+                  "annotation": "",
+                  "descr": "",
+                  "dn": "",
+                  "matchT": "AtleastOne",
+                  "name": "",
+                  "nameAlias": "",
+                  "prefGrMemb": "disabled",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsOspfCtxPol": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnOspfCtxPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsCtxToEpRet": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnFvEpRetPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsCtxToExtRouteTagPol": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnL3extRouteTagPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsBgpCtxPol": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnBgpCtxPolName": "",
+                  "userdom": "all"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fvBD": {
+          "attributes": {
+            "OptimizeWanBandwidth": "no",
+            "annotation": "",
+            "arpFlood": "yes",
+            "descr": "",
+            "dn": "uni/tn-SnV/BD-BD_3",
+            "enableRogueExceptMac": "no",
+            "epClear": "no",
+            "epMoveDetectMode": "",
+            "hostBasedRouting": "no",
+            "intersiteBumTrafficAllow": "no",
+            "intersiteL2Stretch": "no",
+            "ipLearning": "yes",
+            "ipv6McastAllow": "no",
+            "limitIpLearnToSubnets": "yes",
+            "llAddr": "::",
+            "mac": "00:22:BD:F8:19:FF",
+            "mcastARPDrop": "yes",
+            "mcastAllow": "no",
+            "multiDstPktAct": "bd-flood",
+            "name": "BD_3",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "type": "regular",
+            "unicastRoute": "yes",
+            "unkMacUcastAct": "proxy",
+            "unkMcastAct": "flood",
+            "userdom": ":all:",
+            "v6unkMcastAct": "flood",
+            "vmac": "not-applicable"
+          },
+          "children": [
+            {
+              "fvRsMldsn": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnMldSnoopPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsIgmpsn": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnIgmpSnoopPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsCtx": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnFvCtxName": "Tenant_3",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsBdToEpRet": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "resolveAct": "resolve",
+                  "tnFvEpRetPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsBDToNdP": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnNdIfPolName": "",
+                  "userdom": "all"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fvBD": {
+          "attributes": {
+            "OptimizeWanBandwidth": "no",
+            "annotation": "",
+            "arpFlood": "yes",
+            "descr": "",
+            "dn": "uni/tn-SnV/BD-BD_2",
+            "enableRogueExceptMac": "no",
+            "epClear": "no",
+            "epMoveDetectMode": "",
+            "hostBasedRouting": "no",
+            "intersiteBumTrafficAllow": "no",
+            "intersiteL2Stretch": "no",
+            "ipLearning": "yes",
+            "ipv6McastAllow": "no",
+            "limitIpLearnToSubnets": "yes",
+            "llAddr": "::",
+            "mac": "00:22:BD:F8:19:FF",
+            "mcastARPDrop": "yes",
+            "mcastAllow": "no",
+            "multiDstPktAct": "bd-flood",
+            "name": "BD_2",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "type": "regular",
+            "unicastRoute": "yes",
+            "unkMacUcastAct": "proxy",
+            "unkMcastAct": "flood",
+            "userdom": ":all:",
+            "v6unkMcastAct": "flood",
+            "vmac": "not-applicable"
+          },
+          "children": [
+            {
+              "fvRsMldsn": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnMldSnoopPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsIgmpsn": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnIgmpSnoopPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsCtx": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnFvCtxName": "Tenant_2",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsBdToEpRet": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "resolveAct": "resolve",
+                  "tnFvEpRetPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsBDToNdP": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnNdIfPolName": "",
+                  "userdom": "all"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fvBD": {
+          "attributes": {
+            "OptimizeWanBandwidth": "no",
+            "annotation": "",
+            "arpFlood": "no",
+            "descr": "",
+            "dn": "uni/tn-SnV/BD-antigravity",
+            "enableRogueExceptMac": "no",
+            "epClear": "no",
+            "epMoveDetectMode": "",
+            "hostBasedRouting": "no",
+            "intersiteBumTrafficAllow": "no",
+            "intersiteL2Stretch": "no",
+            "ipLearning": "yes",
+            "ipv6McastAllow": "no",
+            "limitIpLearnToSubnets": "yes",
+            "llAddr": "::",
+            "mac": "00:22:BD:F8:19:FF",
+            "mcastARPDrop": "yes",
+            "mcastAllow": "no",
+            "multiDstPktAct": "bd-flood",
+            "name": "antigravity",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "type": "regular",
+            "unicastRoute": "yes",
+            "unkMacUcastAct": "proxy",
+            "unkMcastAct": "flood",
+            "userdom": ":all:",
+            "v6unkMcastAct": "flood",
+            "vmac": "not-applicable"
+          },
+          "children": [
+            {
+              "fvSubnet": {
+                "attributes": {
+                  "annotation": "",
+                  "ctrl": "nd",
+                  "descr": "",
+                  "dn": "",
+                  "ip": "10.2.10.1/23",
+                  "ipDPLearning": "enabled",
+                  "name": "",
+                  "nameAlias": "",
+                  "preferred": "no",
+                  "scope": "private",
+                  "userdom": ":all:",
+                  "virtual": "no"
+                }
+              }
+            },
+            {
+              "fvRsMldsn": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnMldSnoopPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsIgmpsn": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnIgmpSnoopPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsCtx": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnFvCtxName": "Superverse",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsBdToEpRet": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "resolveAct": "resolve",
+                  "tnFvEpRetPolName": "",
+                  "userdom": "all"
+                }
+              }
+            },
+            {
+              "fvRsBDToNdP": {
+                "attributes": {
+                  "annotation": "",
+                  "dn": "",
+                  "tnNdIfPolName": "",
+                  "userdom": "all"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "vzFilter": {
+          "attributes": {
+            "annotation": "",
+            "descr": "",
+            "dn": "uni/tn-SnV/flt-http",
+            "name": "http",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "userdom": ":all:"
+          },
+          "children": [
+            {
+              "vzEntry": {
+                "attributes": {
+                  "annotation": "",
+                  "applyToFrag": "no",
+                  "arpOpc": "unspecified",
+                  "dFromPort": "http",
+                  "dToPort": "http",
+                  "descr": "",
+                  "dn": "",
+                  "etherT": "ip",
+                  "icmpv4T": "unspecified",
+                  "icmpv6T": "unspecified",
+                  "matchDscp": "unspecified",
+                  "name": "tcp-80",
+                  "nameAlias": "",
+                  "prot": "tcp",
+                  "sFromPort": "unspecified",
+                  "sToPort": "unspecified",
+                  "stateful": "no",
+                  "tcpRules": "",
+                  "userdom": ":all:"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "vzFilter": {
+          "attributes": {
+            "annotation": "",
+            "descr": "",
+            "dn": "uni/tn-SnV/flt-sql",
+            "name": "sql",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "userdom": ":all:"
+          },
+          "children": [
+            {
+              "vzEntry": {
+                "attributes": {
+                  "annotation": "",
+                  "applyToFrag": "no",
+                  "arpOpc": "unspecified",
+                  "dFromPort": "1433",
+                  "dToPort": "1433",
+                  "descr": "",
+                  "dn": "",
+                  "etherT": "ip",
+                  "icmpv4T": "unspecified",
+                  "icmpv6T": "unspecified",
+                  "matchDscp": "unspecified",
+                  "name": "tcp-1433",
+                  "nameAlias": "",
+                  "prot": "tcp",
+                  "sFromPort": "unspecified",
+                  "sToPort": "unspecified",
+                  "stateful": "no",
+                  "tcpRules": "",
+                  "userdom": ":all:"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fvRsTenantMonPol": {
+          "attributes": {
+            "annotation": "",
+            "dn": "uni/tn-SnV/rsTenantMonPol",
+            "tnMonEPGPolName": "",
+            "userdom": "all"
+          }
+        }
+      },
+      {
+        "fvAp": {
+          "attributes": {
+            "annotation": "",
+            "descr": "",
+            "dn": "uni/tn-SnV/ap-Rescue",
+            "name": "Rescue",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "prio": "unspecified",
+            "userdom": ":all:"
+          },
+          "children": [
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "annotation": "",
+                  "descr": "",
+                  "dn": "",
+                  "exceptionTag": "",
+                  "floodOnEncap": "disabled",
+                  "fwdCtrl": "",
+                  "hasMcastSource": "no",
+                  "isAttrBasedEPg": "no",
+                  "matchT": "AtleastOne",
+                  "name": "Web",
+                  "nameAlias": "",
+                  "pcEnfPref": "unenforced",
+                  "prefGrMemb": "exclude",
+                  "prio": "unspecified",
+                  "shutdown": "no",
+                  "userdom": ":all:"
+                },
+                "children": [
+                  {
+                    "fvRsProv": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "intent": "install",
+                        "matchT": "AtleastOne",
+                        "prio": "unspecified",
+                        "tnVzBrCPName": "web",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-123",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/paths-101/pathep-[eth1/10]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-123",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1A]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-123",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1B]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsDomAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "bindingType": "none",
+                        "classPref": "encap",
+                        "customEpgName": "",
+                        "delimiter": "",
+                        "dn": "",
+                        "encap": "unknown",
+                        "encapMode": "auto",
+                        "epgCos": "Cos0",
+                        "epgCosPref": "disabled",
+                        "instrImedcy": "lazy",
+                        "lagPolicyName": "",
+                        "netflowDir": "both",
+                        "netflowPref": "disabled",
+                        "numPorts": "0",
+                        "portAllocation": "none",
+                        "primaryEncap": "unknown",
+                        "primaryEncapInner": "unknown",
+                        "resImedcy": "lazy",
+                        "secondaryEncapInner": "unknown",
+                        "switchingMode": "native",
+                        "tDn": "uni/phys-SnV_phys",
+                        "untagged": "no",
+                        "userdom": ":all:",
+                        "vnetOnly": "no"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsCons": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "intent": "install",
+                        "prio": "unspecified",
+                        "tnVzBrCPName": "database",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsCustQosPol": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnQosCustomPolName": "",
+                        "userdom": "all"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsBd": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnFvBDName": "antigravity",
+                        "userdom": "all"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "annotation": "",
+                  "descr": "",
+                  "dn": "",
+                  "exceptionTag": "",
+                  "floodOnEncap": "disabled",
+                  "fwdCtrl": "",
+                  "hasMcastSource": "no",
+                  "isAttrBasedEPg": "no",
+                  "matchT": "AtleastOne",
+                  "name": "Database",
+                  "nameAlias": "",
+                  "pcEnfPref": "unenforced",
+                  "prefGrMemb": "exclude",
+                  "prio": "unspecified",
+                  "shutdown": "no",
+                  "userdom": ":all:"
+                },
+                "children": [
+                  {
+                    "fvRsProv": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "intent": "install",
+                        "matchT": "AtleastOne",
+                        "prio": "unspecified",
+                        "tnVzBrCPName": "database",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-124",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1B]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-124",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1A]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsDomAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "bindingType": "none",
+                        "classPref": "encap",
+                        "customEpgName": "",
+                        "delimiter": "",
+                        "dn": "",
+                        "encap": "unknown",
+                        "encapMode": "auto",
+                        "epgCos": "Cos0",
+                        "epgCosPref": "disabled",
+                        "instrImedcy": "lazy",
+                        "lagPolicyName": "",
+                        "netflowDir": "both",
+                        "netflowPref": "disabled",
+                        "numPorts": "0",
+                        "portAllocation": "none",
+                        "primaryEncap": "unknown",
+                        "primaryEncapInner": "unknown",
+                        "resImedcy": "lazy",
+                        "secondaryEncapInner": "unknown",
+                        "switchingMode": "native",
+                        "tDn": "uni/phys-SnV_phys",
+                        "untagged": "no",
+                        "userdom": ":all:",
+                        "vnetOnly": "no"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsCustQosPol": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnQosCustomPolName": "",
+                        "userdom": "all"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsBd": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnFvBDName": "antigravity",
+                        "userdom": "all"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fvAp": {
+          "attributes": {
+            "annotation": "",
+            "descr": "",
+            "dn": "uni/tn-SnV/ap-Evolution_X",
+            "name": "Evolution_X",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "prio": "unspecified",
+            "userdom": ":all:"
+          },
+          "children": [
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "annotation": "",
+                  "descr": "",
+                  "dn": "",
+                  "exceptionTag": "",
+                  "floodOnEncap": "disabled",
+                  "fwdCtrl": "",
+                  "hasMcastSource": "no",
+                  "isAttrBasedEPg": "no",
+                  "matchT": "AtleastOne",
+                  "name": "Database",
+                  "nameAlias": "",
+                  "pcEnfPref": "unenforced",
+                  "prefGrMemb": "exclude",
+                  "prio": "unspecified",
+                  "shutdown": "no",
+                  "userdom": ":all:"
+                },
+                "children": [
+                  {
+                    "fvRsProv": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "intent": "install",
+                        "matchT": "AtleastOne",
+                        "prio": "unspecified",
+                        "tnVzBrCPName": "database",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-122",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1B]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-122",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1A]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsDomAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "bindingType": "none",
+                        "classPref": "encap",
+                        "customEpgName": "",
+                        "delimiter": "",
+                        "dn": "",
+                        "encap": "unknown",
+                        "encapMode": "auto",
+                        "epgCos": "Cos0",
+                        "epgCosPref": "disabled",
+                        "instrImedcy": "lazy",
+                        "lagPolicyName": "",
+                        "netflowDir": "both",
+                        "netflowPref": "disabled",
+                        "numPorts": "0",
+                        "portAllocation": "none",
+                        "primaryEncap": "unknown",
+                        "primaryEncapInner": "unknown",
+                        "resImedcy": "lazy",
+                        "secondaryEncapInner": "unknown",
+                        "switchingMode": "native",
+                        "tDn": "uni/phys-SnV_phys",
+                        "untagged": "no",
+                        "userdom": ":all:",
+                        "vnetOnly": "no"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsCustQosPol": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnQosCustomPolName": "",
+                        "userdom": "all"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsBd": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnFvBDName": "antigravity",
+                        "userdom": "all"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "annotation": "",
+                  "descr": "",
+                  "dn": "",
+                  "exceptionTag": "",
+                  "floodOnEncap": "disabled",
+                  "fwdCtrl": "",
+                  "hasMcastSource": "no",
+                  "isAttrBasedEPg": "no",
+                  "matchT": "AtleastOne",
+                  "name": "Web",
+                  "nameAlias": "",
+                  "pcEnfPref": "unenforced",
+                  "prefGrMemb": "exclude",
+                  "prio": "unspecified",
+                  "shutdown": "no",
+                  "userdom": ":all:"
+                },
+                "children": [
+                  {
+                    "fvRsProv": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "intent": "install",
+                        "matchT": "AtleastOne",
+                        "prio": "unspecified",
+                        "tnVzBrCPName": "web",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-121",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1B]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-121",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1A]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-121",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/paths-101/pathep-[eth1/10]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsDomAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "bindingType": "none",
+                        "classPref": "encap",
+                        "customEpgName": "",
+                        "delimiter": "",
+                        "dn": "",
+                        "encap": "unknown",
+                        "encapMode": "auto",
+                        "epgCos": "Cos0",
+                        "epgCosPref": "disabled",
+                        "instrImedcy": "lazy",
+                        "lagPolicyName": "",
+                        "netflowDir": "both",
+                        "netflowPref": "disabled",
+                        "numPorts": "0",
+                        "portAllocation": "none",
+                        "primaryEncap": "unknown",
+                        "primaryEncapInner": "unknown",
+                        "resImedcy": "lazy",
+                        "secondaryEncapInner": "unknown",
+                        "switchingMode": "native",
+                        "tDn": "uni/phys-SnV_phys",
+                        "untagged": "no",
+                        "userdom": ":all:",
+                        "vnetOnly": "no"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsCons": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "intent": "install",
+                        "prio": "unspecified",
+                        "tnVzBrCPName": "database",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsCustQosPol": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnQosCustomPolName": "",
+                        "userdom": "all"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsBd": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnFvBDName": "antigravity",
+                        "userdom": "all"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fvAp": {
+          "attributes": {
+            "annotation": "",
+            "descr": "",
+            "dn": "uni/tn-SnV/ap-Chaos",
+            "name": "Chaos",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "prio": "unspecified",
+            "userdom": ":all:"
+          },
+          "children": [
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "annotation": "",
+                  "descr": "",
+                  "dn": "",
+                  "exceptionTag": "",
+                  "floodOnEncap": "disabled",
+                  "fwdCtrl": "",
+                  "hasMcastSource": "no",
+                  "isAttrBasedEPg": "no",
+                  "matchT": "AtleastOne",
+                  "name": "Database",
+                  "nameAlias": "",
+                  "pcEnfPref": "unenforced",
+                  "prefGrMemb": "exclude",
+                  "prio": "unspecified",
+                  "shutdown": "no",
+                  "userdom": ":all:"
+                },
+                "children": [
+                  {
+                    "fvRsProv": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "intent": "install",
+                        "matchT": "AtleastOne",
+                        "prio": "unspecified",
+                        "tnVzBrCPName": "database",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-126",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1A]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-126",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1B]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsDomAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "bindingType": "none",
+                        "classPref": "encap",
+                        "customEpgName": "",
+                        "delimiter": "",
+                        "dn": "",
+                        "encap": "unknown",
+                        "encapMode": "auto",
+                        "epgCos": "Cos0",
+                        "epgCosPref": "disabled",
+                        "instrImedcy": "lazy",
+                        "lagPolicyName": "",
+                        "netflowDir": "both",
+                        "netflowPref": "disabled",
+                        "numPorts": "0",
+                        "portAllocation": "none",
+                        "primaryEncap": "unknown",
+                        "primaryEncapInner": "unknown",
+                        "resImedcy": "lazy",
+                        "secondaryEncapInner": "unknown",
+                        "switchingMode": "native",
+                        "tDn": "uni/phys-SnV_phys",
+                        "untagged": "no",
+                        "userdom": ":all:",
+                        "vnetOnly": "no"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsCustQosPol": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnQosCustomPolName": "",
+                        "userdom": "all"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsBd": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnFvBDName": "antigravity",
+                        "userdom": "all"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "annotation": "",
+                  "descr": "",
+                  "dn": "",
+                  "exceptionTag": "",
+                  "floodOnEncap": "disabled",
+                  "fwdCtrl": "",
+                  "hasMcastSource": "no",
+                  "isAttrBasedEPg": "no",
+                  "matchT": "AtleastOne",
+                  "name": "Web",
+                  "nameAlias": "",
+                  "pcEnfPref": "unenforced",
+                  "prefGrMemb": "exclude",
+                  "prio": "unspecified",
+                  "shutdown": "no",
+                  "userdom": ":all:"
+                },
+                "children": [
+                  {
+                    "fvRsProv": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "intent": "install",
+                        "matchT": "AtleastOne",
+                        "prio": "unspecified",
+                        "tnVzBrCPName": "web",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-125",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1B]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-125",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1A]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-125",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/paths-101/pathep-[eth1/10]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsDomAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "bindingType": "none",
+                        "classPref": "encap",
+                        "customEpgName": "",
+                        "delimiter": "",
+                        "dn": "",
+                        "encap": "unknown",
+                        "encapMode": "auto",
+                        "epgCos": "Cos0",
+                        "epgCosPref": "disabled",
+                        "instrImedcy": "lazy",
+                        "lagPolicyName": "",
+                        "netflowDir": "both",
+                        "netflowPref": "disabled",
+                        "numPorts": "0",
+                        "portAllocation": "none",
+                        "primaryEncap": "unknown",
+                        "primaryEncapInner": "unknown",
+                        "resImedcy": "lazy",
+                        "secondaryEncapInner": "unknown",
+                        "switchingMode": "native",
+                        "tDn": "uni/phys-SnV_phys",
+                        "untagged": "no",
+                        "userdom": ":all:",
+                        "vnetOnly": "no"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsCons": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "intent": "install",
+                        "prio": "unspecified",
+                        "tnVzBrCPName": "database",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsCustQosPol": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnQosCustomPolName": "",
+                        "userdom": "all"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsBd": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnFvBDName": "antigravity",
+                        "userdom": "all"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "fvAp": {
+          "attributes": {
+            "annotation": "",
+            "descr": "",
+            "dn": "uni/tn-SnV/ap-Power_Up",
+            "name": "Power_Up",
+            "nameAlias": "",
+            "ownerKey": "",
+            "ownerTag": "",
+            "prio": "unspecified",
+            "userdom": ":all:"
+          },
+          "children": [
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "annotation": "",
+                  "descr": "",
+                  "dn": "",
+                  "exceptionTag": "",
+                  "floodOnEncap": "disabled",
+                  "fwdCtrl": "",
+                  "hasMcastSource": "no",
+                  "isAttrBasedEPg": "no",
+                  "matchT": "AtleastOne",
+                  "name": "Web",
+                  "nameAlias": "",
+                  "pcEnfPref": "unenforced",
+                  "prefGrMemb": "exclude",
+                  "prio": "unspecified",
+                  "shutdown": "no",
+                  "userdom": ":all:"
+                },
+                "children": [
+                  {
+                    "fvRsProv": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "intent": "install",
+                        "matchT": "AtleastOne",
+                        "prio": "unspecified",
+                        "tnVzBrCPName": "web",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-127",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/paths-101/pathep-[eth1/10]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-127",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1A]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-127",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1B]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsDomAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "bindingType": "none",
+                        "classPref": "encap",
+                        "customEpgName": "",
+                        "delimiter": "",
+                        "dn": "",
+                        "encap": "unknown",
+                        "encapMode": "auto",
+                        "epgCos": "Cos0",
+                        "epgCosPref": "disabled",
+                        "instrImedcy": "lazy",
+                        "lagPolicyName": "",
+                        "netflowDir": "both",
+                        "netflowPref": "disabled",
+                        "numPorts": "0",
+                        "portAllocation": "none",
+                        "primaryEncap": "unknown",
+                        "primaryEncapInner": "unknown",
+                        "resImedcy": "lazy",
+                        "secondaryEncapInner": "unknown",
+                        "switchingMode": "native",
+                        "tDn": "uni/phys-SnV_phys",
+                        "untagged": "no",
+                        "userdom": ":all:",
+                        "vnetOnly": "no"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsCons": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "intent": "install",
+                        "prio": "unspecified",
+                        "tnVzBrCPName": "database",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsCustQosPol": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnQosCustomPolName": "",
+                        "userdom": "all"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsBd": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnFvBDName": "antigravity",
+                        "userdom": "all"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "fvAEPg": {
+                "attributes": {
+                  "annotation": "",
+                  "descr": "",
+                  "dn": "",
+                  "exceptionTag": "",
+                  "floodOnEncap": "disabled",
+                  "fwdCtrl": "",
+                  "hasMcastSource": "no",
+                  "isAttrBasedEPg": "no",
+                  "matchT": "AtleastOne",
+                  "name": "Database",
+                  "nameAlias": "",
+                  "pcEnfPref": "unenforced",
+                  "prefGrMemb": "exclude",
+                  "prio": "unspecified",
+                  "shutdown": "no",
+                  "userdom": ":all:"
+                },
+                "children": [
+                  {
+                    "fvRsProv": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "intent": "install",
+                        "matchT": "AtleastOne",
+                        "prio": "unspecified",
+                        "tnVzBrCPName": "database",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-128",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1B]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsPathAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "descr": "",
+                        "dn": "",
+                        "encap": "vlan-128",
+                        "instrImedcy": "lazy",
+                        "mode": "regular",
+                        "primaryEncap": "unknown",
+                        "tDn": "topology/pod-1/protpaths-101-102/pathep-[SnV_FI-1A]",
+                        "userdom": ":all:"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsDomAtt": {
+                      "attributes": {
+                        "annotation": "",
+                        "bindingType": "none",
+                        "classPref": "encap",
+                        "customEpgName": "",
+                        "delimiter": "",
+                        "dn": "",
+                        "encap": "unknown",
+                        "encapMode": "auto",
+                        "epgCos": "Cos0",
+                        "epgCosPref": "disabled",
+                        "instrImedcy": "lazy",
+                        "lagPolicyName": "",
+                        "netflowDir": "both",
+                        "netflowPref": "disabled",
+                        "numPorts": "0",
+                        "portAllocation": "none",
+                        "primaryEncap": "unknown",
+                        "primaryEncapInner": "unknown",
+                        "resImedcy": "lazy",
+                        "secondaryEncapInner": "unknown",
+                        "switchingMode": "native",
+                        "tDn": "uni/phys-SnV_phys",
+                        "untagged": "no",
+                        "userdom": ":all:",
+                        "vnetOnly": "no"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsCustQosPol": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnQosCustomPolName": "",
+                        "userdom": "all"
+                      }
+                    }
+                  },
+                  {
+                    "fvRsBd": {
+                      "attributes": {
+                        "annotation": "",
+                        "dn": "",
+                        "tnFvBDName": "antigravity",
+                        "userdom": "all"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
